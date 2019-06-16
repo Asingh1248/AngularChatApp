@@ -1,0 +1,13 @@
+<div class="feed">
+  <!-- Suscribing at the Template -->
+  <div *ngFor="let message of feed |async" class="message">
+    <p>Message Here</p>
+
+
+    <!-- Error6: FeedComponent.html:3 ERROR Error: InvalidPipeArgument: '[object Object]' for pipe 'AsyncPipe'
+    at invalidPipeArgumentError (common.js:4323)
+    at 
+  -->
+    <app-message [chatMessage]=message></app-message>
+  </div>
+</div>
